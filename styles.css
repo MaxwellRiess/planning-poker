@@ -73,8 +73,15 @@ body, html {
 }
 
 @media (max-width: 600px) {
+     .screen {
+        justify-content: flex-start; /* Aligns content to the top */
+        padding-top: 20px; /* Reduced top padding for closer top alignment */
+    }
+
     #app-title {
-        font-size: 3em; /* Slightly smaller title for mobile */
+        font-size: 1.5em; /* Adjust if needed */
+        margin-top: 10px; /* Reduced top margin for the title */
+        margin-bottom: 15px; /* Adjusted bottom margin */
     }
 
     .fibonacci-button {
