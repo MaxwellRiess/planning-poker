@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Poker Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="selection-screen" class="screen">
+         <h1 id="app-title">Planning Poker</h1>
+        <button class="fibonacci-button" data-number="1" style="background-color: #ef476f;">1</button>
+        <button class="fibonacci-button" data-number="2" style="background-color: #ffd166;">2</button>
+        <button class="fibonacci-button" data-number="3" style="background-color: #06d6a0;">3</button>
+        <button class="fibonacci-button" data-number="5" style="background-color: #118ab2;">5</button>
+        <button class="fibonacci-button" data-number="8" style="background-color: #073b4c;">8</button>
+        <button class="fibonacci-button" data-number="13" style="background-color: #ef233c;">13</button>
+        <button class="fibonacci-button" data-number="21" style="background-color: #fb5607;">21</button>
+        <!-- Add buttons for 3, 5, 8, 13, 21 with respective colors -->
+    </div>
+    <div id="display-screen" class="screen" style="display: none;">
+        <span id="selected-number"></span>
+        <button id="back-button">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

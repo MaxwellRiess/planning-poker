@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.screen {
+    display: flex;
+    background: lightseagreen;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#app-title {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: ghostwhite;
+}
+
+.fibonacci-button {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    padding: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease;
+}
+
+.fibonacci-button:hover {
+    transform: scale(1.05);
+}
+
+#back-button {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease;
+}
+
+#selected-number {
+    font-size: 30em;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #app-title {
+        font-size: 3em; /* Slightly smaller title for mobile */
+    }
+
+    .fibonacci-button {
+        width: 100%; /* Button width to take the full screen width */
+        max-width: 300px; /* Maximum width to avoid overly large buttons */
+        height: 60px; /* Increased height for better touch interaction */
+        font-size: 18px; /* Larger font size for visibility */
+        margin: 5px 0; /* Adjusted margin for mobile layout */
+        padding: 12px; /* Adjusted padding for button size */
+    }
+
+    #selected-number {
+        font-size: 20em; /* Significantly larger number for easy reading */
+        margin-top: 20px; /* Additional spacing */
+    }
+
+    #back-button {
+        font-size: 18px; /* Larger font size for easier interaction */
+        padding: 12px 24px; /* Larger padding for a bigger touch target */
+    }
+}
