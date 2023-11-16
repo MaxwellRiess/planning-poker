@@ -3,6 +3,8 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .screen {
@@ -12,6 +14,9 @@ body, html {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow: auto; /* Allows scrolling within each screen if needed */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    /* Other existing styles */
 }
 
 #app-title {
